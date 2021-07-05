@@ -7,7 +7,8 @@ import com.bridgelabz.inventorymnagement.Items;
 public class StockAccountManagementImpl implements StockAccountManagement{
 
 	LinkedList<Stocks> sharesList = new LinkedList<Stocks>();
-
+	
+	//method to Add Stocks
 	@Override
 	public void addStocks(Stocks share) {
 		if (sharesList.contains(share)) {
@@ -19,6 +20,7 @@ public class StockAccountManagementImpl implements StockAccountManagement{
 		
 	}
 
+	//method to get details of stocks/shares
 	@Override
 	public void getStockDetails() {
 		for (Stocks stocks : sharesList) {
@@ -26,6 +28,7 @@ public class StockAccountManagementImpl implements StockAccountManagement{
 		}		
 	}
 
+	//method to calculate values
 	@Override
 	public void calculateShareValue() {
 		double totalvalue = 0;
