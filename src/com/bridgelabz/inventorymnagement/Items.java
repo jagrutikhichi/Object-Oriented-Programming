@@ -21,7 +21,7 @@ public class Items {
 	
 	public void setItemWeight(double itemWeight) {
 		if (itemWeight < 0.0) {
-			System.err.println("Weight cannot");
+			System.err.println("Weight cannot be zero");
 		}
 		else {
 		this.itemWeight = itemWeight;
