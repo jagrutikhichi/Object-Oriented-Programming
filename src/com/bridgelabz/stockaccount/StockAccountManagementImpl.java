@@ -39,4 +39,32 @@ public class StockAccountManagementImpl implements StockAccountManagement{
 		}
 		System.out.println("Total value is: "+totalvalue);
 	}
+
+	@Override
+	public void removeStock(String shareName) {
+		for (Stocks stocks : sharesList) {
+			if(stocks.getShareName().equals(shareName))	{
+				stocks.setShareCount(0);
+				stocks.setShareName(null);
+				stocks.setSharePrice(0);
+				
+			}		
+		}
+		
+	}
+
+	@Override
+	public void sellStocks(int count, String symbol) {
+		
+		
+	}
+
+	@Override
+	public void buyStocks(int count, String symbol) {
+		
+		
+	}
+	
+	
+	
 }
